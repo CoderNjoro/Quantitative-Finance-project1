@@ -49,7 +49,7 @@ class ICTQuantSystem:
     """Enhanced Inner Circle Trader Quantitative Trading System with Machine Learning"""
     def __init__(self, symbol='EURUSD', api_key=None, outputsize='full', timeframe='1d'):
         self.symbol = symbol
-        self.api_key = api_key if api_key else os.getenv('ALPHA_VANTAGE_API_KEY', 'BDTK3CG8JS0QDM6C')
+        self.api_key = api_key if api_key else os.getenv('ALPHA_VANTAGE_API_KEY', "ENTER YOUR ALPHA_VANTAGE_API_KEY")
         self.outputsize = outputsize
         self.timeframe = timeframe
         self.data = None
